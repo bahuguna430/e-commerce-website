@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My E-Commerce Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>My E-Commerce Store</h1>
+    <a href="checkout.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+</header>
+
+<main>
+    
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search products...">
+        <button id="search-btn">Search</button>
+        <button id="clear-btn">Clear</button>
+    </div>
+    <!-- Slider -->
+<div class="slider">
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+
+    <div class="slides">
+        <img src="/image/big sale.jpg" class="slide active">
+        <img src="/image/new arrivals.jpg" class="slide">
+        <img src="/image/best deal.jpg" class="slide">
+    </div>
+
+    <button class="next" onclick="changeSlide(1)">❯</button>
+</div>
+
+    <div class="products" id="products"></div>
+</main>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
